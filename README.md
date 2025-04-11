@@ -12,6 +12,16 @@ This paper ...
 - **Code**: ...
 - **Citation**: Kang, Wang-Cheng, and Julian McAuley. "Self-attentive sequential recommendation." 2018 IEEE international conference on data mining (ICDM). IEEE, 2018.
 
+## CL4SRec
+
+The paper proposes a novel model called **Contrastive Learning for Sequential Recommendation (CL4SRec)**. It also proposes three data augmentation approaches: mask, crop and reorder.
+
+The contrastive learning framework is as follows: Two data augmentation methods, $a_i$ and $a_j$ , are sampled from the same augmentation set A. They are applied to each user’s sequence and then we can obtain two correlated views of each sequence. A shared embedding layer and the user representation model f (·) (transformer in this paper) transform the original and augmented sequences to the latent space where the contrastive loss and recommendation loss are applied. The final loss function is the linear weighted sum of conrastive loss and recommendation loss.
+
+- **Title**: [Contrastive Learning for Sequential Recommendation](https://ieeexplore.ieee.org/document/9835621)
+- **Code**: https://github.com/JamZheng/CL4SRec-pytorch
+- **Citation**: X. Xie et al., "Contrastive Learning for Sequential Recommendation," 2022 IEEE 38th International Conference on Data Engineering (ICDE), Kuala Lumpur, Malaysia, 2022, pp. 1259-1273, doi: 10.1109/ICDE53745.2022.00099.
+
 ### LACLRec
 
 This paper introduces a novel framework called **Learnable Sequence Augmenter for Triplet Contrastive Learning in Sequential Recommendation (LACLRec)**. 
